@@ -61,7 +61,7 @@ a:hover {
 }
 
 .menu-toggle {
-  display: none;
+  display: none !important;
   width: 2.65rem;
   height: 2.65rem;
   align-items: center;
@@ -211,8 +211,11 @@ p + p {
   }
 
   .menu-toggle {
-    display: flex;
+    display: flex !important;
     margin-left: auto;
+    position: absolute;
+    top: 0.8rem;
+    right: 0;
   }
 
   .nav-links {
