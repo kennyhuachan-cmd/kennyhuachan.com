@@ -19,7 +19,13 @@
         <img src="../assets/logo-symbol.png" alt="" width="32" height="32" />
         <span>Kenny Chan</span>
       </a>
-      <nav class="nav-links" aria-label="Site">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-toggle-line"></span>
+        <span class="menu-toggle-line"></span>
+        <span class="menu-toggle-line"></span>
+        <span class="screen-reader-text">Menu</span>
+      </button>
+      <nav class="nav-links" id="site-nav" aria-label="Site">
         <a href="/">Home</a>
         <a href="https://www.linkedin.com/in/kenny-hua-chan/">LinkedIn</a>
         <a href="https://x.com/kennyhuachan">Twitter/X</a>
@@ -38,5 +44,6 @@
         </div>
       </section>
     </main>
+    <script src="../assets/site.js"></script>
   </body>
 </html>

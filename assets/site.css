@@ -46,6 +46,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  position: relative;
   width: min(920px, calc(100% - 2rem));
   margin: 0 auto;
   padding: 1.25rem 0;
@@ -62,6 +63,44 @@ a:hover {
 
 .brand img {
   border-radius: 50%;
+}
+
+.menu-toggle {
+  display: none;
+  width: 2.65rem;
+  height: 2.65rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.28rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.72);
+  cursor: pointer;
+}
+
+.menu-toggle-line {
+  display: block;
+  width: 1.15rem;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.menu-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
 }
 
 .nav-links {
@@ -156,12 +195,37 @@ p + p {
   }
 
   .site-header {
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: flex;
+    margin-left: auto;
   }
 
   .nav-links {
-    justify-content: flex-start;
+    display: none;
+    position: absolute;
+    top: calc(100% - 0.6rem);
+    right: 0;
+    z-index: 10;
+    min-width: 12rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: var(--shadow);
+  }
+
+  .nav-links.is-open {
+    display: grid;
+    gap: 0.75rem;
+    justify-content: stretch;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.25rem 0;
   }
 
   .profile {
