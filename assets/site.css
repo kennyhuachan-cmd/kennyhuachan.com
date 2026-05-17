@@ -55,14 +55,9 @@ a:hover {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
   font-size: 1.12rem;
   font-weight: 700;
   text-decoration: none;
-}
-
-.brand img {
-  border-radius: 50%;
 }
 
 .menu-toggle {
@@ -91,16 +86,6 @@ a:hover {
 .menu-toggle:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
-}
-
-.screen-reader-text {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
 }
 
 .nav-links {
