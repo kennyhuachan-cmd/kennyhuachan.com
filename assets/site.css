@@ -139,8 +139,8 @@ a:hover {
 }
 
 .profile-photo {
-  width: 16rem;
-  height: 16rem;
+  width: 12rem;
+  height: 12rem;
   border: 1px solid var(--line);
   border-radius: 50%;
   box-shadow: var(--shadow);
@@ -284,8 +284,8 @@ p + p {
   }
 
   .profile-photo {
-    width: 13rem;
-    height: 13rem;
+    width: 9.75rem;
+    height: 9.75rem;
   }
 
   .profile-social-bar {
