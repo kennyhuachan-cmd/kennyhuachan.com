@@ -138,12 +138,18 @@ a:hover {
   justify-items: start;
 }
 
+.profile-card {
+  display: grid;
+  justify-items: center;
+  width: min(100%, 12rem);
+}
+
 .profile-photo {
   width: 12rem;
   height: 12rem;
   border: 1px solid var(--line);
   border-radius: 50%;
-  box-shadow: var(--shadow);
+  box-shadow: 0 14px 34px rgba(19, 78, 74, 0.08);
   object-fit: cover;
 }
 
@@ -153,13 +159,8 @@ a:hover {
   align-items: center;
   justify-content: stretch;
   gap: 0.12rem;
-  width: 11.75rem;
-  margin-top: 1.15rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 0.18rem;
-  background: rgba(255, 255, 255, 0.64);
-  box-shadow: 0 14px 34px rgba(19, 78, 74, 0.07);
+  width: 10.75rem;
+  margin-top: 0.32rem;
 }
 
 .profile-social-bar .social-link {
@@ -288,9 +289,13 @@ p + p {
     height: 9.75rem;
   }
 
+  .profile-card {
+    width: min(100%, 9.75rem);
+  }
+
   .profile-social-bar {
-    width: 10.9rem;
-    margin-top: 1rem;
+    width: 9.6rem;
+    margin-top: 0.3rem;
   }
 
   h1 {
