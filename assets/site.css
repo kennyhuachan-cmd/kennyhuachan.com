@@ -211,13 +211,11 @@ h1 {
 .lede {
   max-width: none;
   margin-top: 0;
+  border-left: 3px solid var(--coral);
+  padding-left: 1rem;
   color: var(--accent-strong);
-  font-family: ui-sans-serif, system-ui, sans-serif;
-  font-size: 0.9rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  line-height: 1.65;
-  text-transform: uppercase;
+  font-size: 1.35rem;
+  line-height: 1.5;
 }
 
 p {
@@ -486,7 +484,7 @@ p + p {
   }
 
   .lede {
-    font-size: 0.82rem;
+    font-size: 1.16rem;
   }
 
   .operator-grid,
