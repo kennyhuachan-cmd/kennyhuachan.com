@@ -488,6 +488,7 @@ p + p {
 .expertise-panel,
 .audience-panel,
 .help-panel,
+.question-panel,
 .detail-panel {
   border: 1px solid rgba(200, 221, 215, 0.86);
   border-radius: 1.3rem;
@@ -497,13 +498,13 @@ p + p {
 
 .expertise-panel,
 .audience-panel,
+.question-panel,
 .help-panel {
   margin-top: 3rem;
   padding: 1.25rem;
 }
 
 .section-intro {
-  max-width: 48rem;
   margin-bottom: 1.2rem;
   color: var(--muted);
   font-size: 1.05rem;
@@ -564,6 +565,61 @@ p + p {
   margin-top: 0.65rem;
   font-size: 0.96rem;
   line-height: 1.48;
+}
+
+.question-layout {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.42fr) minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.question-intro {
+  color: var(--accent-strong);
+  font-size: 1.08rem;
+  line-height: 1.55;
+}
+
+.question-list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.question-list li {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 1rem;
+  align-items: baseline;
+  border-top: 1px solid rgba(200, 221, 215, 0.7);
+  padding: 0.82rem 0;
+}
+
+.question-list li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.question-list li:last-child {
+  padding-bottom: 0;
+}
+
+.question-list span {
+  color: var(--coral);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.question-list strong {
+  color: var(--ink);
+  font-size: 1rem;
+  letter-spacing: -0.015em;
+  line-height: 1.35;
 }
 
 .logo-strip {
@@ -839,6 +895,7 @@ p + p {
 
   .expertise-panel,
   .audience-panel,
+  .question-panel,
   .help-panel {
     margin-top: 2.35rem;
   }
@@ -847,6 +904,8 @@ p + p {
   .audience-grid,
   .help-grid,
   .logo-strip,
+  .question-layout,
+  .question-list li,
   .work-detail-grid,
   .closing-cta,
   .structured-list li {
@@ -856,6 +915,7 @@ p + p {
   .expertise-panel,
   .audience-panel,
   .help-panel,
+  .question-panel,
   .detail-panel {
     border-radius: 1rem;
   }
