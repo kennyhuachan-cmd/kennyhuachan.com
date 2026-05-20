@@ -26,8 +26,8 @@ until the site needs it.
 
 ## Migration Checklist
 
-- Export/download existing WordPress pages and media. Initial homepage and
-  `/blog/` content migrated on 2026-05-11.
+- Export/download existing WordPress pages and media. Initial homepage content
+  migrated on 2026-05-11.
 - Recreate important pages in this repo.
 - Map old WordPress URLs to new URLs in `_redirects`.
 - Verify title tags, descriptions, and social preview metadata.
